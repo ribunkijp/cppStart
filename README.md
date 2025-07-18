@@ -364,6 +364,19 @@ void show(Employee &a) {
 ### enum 列挙
 
 ```c++
+//おすすめ
+enum class Color {
+	red,
+	yellow,
+	pink,
+	blue,
+	green
+};
+
+Color color_0{ Color::pink };
+std::cout << static_cast<int>(color_0) << '\n';
+
+//おすすめではない
 enum Color {
 	red,//0
 	yellow,//1
