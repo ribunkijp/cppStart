@@ -1,21 +1,28 @@
 #include <iostream>
+#include <string>
+#include <map>
 
 
-enum class Color {
-	red,
-	yellow,
-	pink,
-	blue,
-	green
-};
 
 int main()
 {
+	std::map<std::string, int>studentScores;
 
-	Color color_0{ Color::pink };
+	studentScores["Alice"] = 30;
+	studentScores["Bob"] = 50;
+	
+	auto it = studentScores.find("Alice");
 
-	std::cout << static_cast<int>(color_0) << '\n';
+	if (it != studentScores.end()) {
+		std::string studentName = it->first;
+		int score = it->second;
 
+		std::cout << "Name: " << studentName << '\n' << "Score: " << score << '\n';
+	}
+
+
+
+	std::cin.get();
 	return 0;
-}
 
+}
