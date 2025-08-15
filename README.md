@@ -576,6 +576,7 @@ str.c_str()
 
 ```c++
 //vectorのインデックスはsize_t型
+emplace_back
     
 ```
 
