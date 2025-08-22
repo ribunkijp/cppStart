@@ -1,3 +1,19 @@
+### std::clamp
+
+```c++
+#include <iostream>
+
+	int a = 10;
+
+	int b = std::clamp(a, 0, 5);//5
+	int c = std::clamp(a, -10, -1);//-1
+
+	
+
+```
+
+
+
 ### map
 
 ```c++
