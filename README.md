@@ -1,3 +1,14 @@
+### git
+
+```c++
+//停止追踪并从远程删掉当前版本里的 x64/
+git rm -r --cached x64/
+git commit -m "stop tracking x64 build output"
+git push
+```
+
+
+
 ### std::clamp
 
 ```c++
